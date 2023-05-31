@@ -9,8 +9,7 @@
     "lint": "next lint",
     "lint:fix": "eslint . --fix",
     "lint:styles": "stylelint \"src/**/*.css\"",
-    "styles:fix": "stylelint \"src/**/*.css\" --fix",
-    "fix": "npm run styles:fix && npm run lint:fix"
+    "styles:fix": "stylelint \"src/**/*.css\" --fix"
   },
   "dependencies": {
     "@types/node": "20.2.5",
@@ -36,8 +35,5 @@
     "stylelint-config-standard": "^33.0.0",
     "stylelint-less": "^1.0.6",
     "stylelint-order": "^6.0.3"
-  },
-  "simple-git-hooks": {
-    "pre-commit": "npm run fix"
   }
 }
